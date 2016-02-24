@@ -1,2 +1,2 @@
-# Maquetas
-Códigos para maquetar una web HTML
+# Design
+Plantillas para diseño web
