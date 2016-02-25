@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/materialize.css">
+	<link rel="stylesheet" href="css/style4.css">
+	<title>Login materialize</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+	<div class="row">
+		<div style="margin:0% auto; max-width:300px;">
+			<div class="card-panel grey lighten-4 z-depth-4 center">
+				<form action="">
+					<div class="row">
+						<h4 class="center">Registro</h4>
+					</div>
+					<div class="row margin">
+						<div class="input-field col s12">
+							<i class="mdi-social-person-outline prefix"></i>
+	            			<input id="username" type="text" class="validate">
+	            			<label for="username" class="center-align">Nombre de usuario</label>
+						</div>
+					</div>
+					<div class="row margin">
+			        	<div class="input-field col s12">
+			            	<i class="mdi-communication-email prefix"></i>
+			            	<input id="email" type="email" class="validate">
+			            	<label for="email" data-error="error" data-success="bien!" class="center-align">Email</label>
+			          	</div>
+        			</div>	
+					<div class="row margin">
+					    <div class="input-field col s12">
+					        <i class="mdi-action-lock-outline prefix"></i>
+					        <input id="password" type="password" class="validate">
+					        <label for="password">Password</label>
+					    </div>
+	        		</div>
+	        		<div class="row margin">
+					    <div class="input-field col s12">
+					        <i class="mdi-action-lock-outline prefix"></i>
+					        <input id="passwordc" type="password" class="validate">
+					        <label for="passwordc">Repetir Password</label>
+					    </div>
+	        		</div>
+          			<div class="row">
+          				<div class="input-field col s12">
+          					<a href="index.html" class="btn waves-effect waves-light col s12">Registrar</a>
+          				</div>
+          				<div class="input-field col s12">
+          					<p class="margin center medium-small sign-up">Ya tienes una cuenta? <a href="page-login.html">Ingresa</a></p>
+          				</div>
+          			</div>	     		
+				</form>
+			</div>
+		</div>
+	</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<!-- Siempre primero jquery -->
+<script src="js/materialize.min.js"></script>	
+</body>
+</html>
