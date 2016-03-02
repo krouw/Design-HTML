@@ -1,0 +1,50 @@
+#content {
+      padding-left: 100px;
+}
+
+@media only screen and (max-width : 992px) {
+	#content{
+	padding-left: 0;
+	}
+}
+
+.profile-img{
+	margin-top: 10px;
+}
+
+.primero:hover{
+	background-color: transparent;
+}
+
+.left{
+	margin-left: 12px;
+}
+
+.side-nav{
+	margin-top: 64px;
+}
+
+.dropdown-content li{
+	line-height: 44px;
+}
+
+.profile-btn{
+	margin: 0 !important;
+	text-transform: capitalize;
+	padding: 0 !important;
+	font-size: 15px;
+}
+
+.profile-btn i{
+	margin: 0;
+	padding: 0;
+}
+
+.thin{
+	margin-top: -40px;
+	font-size: 12px;
+}
+
+.brand-logo:hover, .btn-flat:hover{
+	background-color: transparent;
+}

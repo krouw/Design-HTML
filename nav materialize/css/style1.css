@@ -9,3 +9,7 @@
 .nav-img{
 	text-align:center; 
 }
+
+.brand-logo:hover{
+	background-color: transparent;
+}
