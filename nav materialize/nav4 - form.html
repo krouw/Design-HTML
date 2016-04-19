@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/materialize.css">
-	<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/style4.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-	<title>Principal materialize</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Principal materialize</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
   <!-- Header -->
   <div class="navbar-fixed">
     <nav class="red lighten-2" role="navigation">
       <div class="nav-wrapper fixed">
-        <ul class="left"> 
-        <a href="#!" class="brand-logo"><img src="http://lorempixel.com/170/30/" alt=""></a>
-        <a href="#" data-activates="nav-mobile" class="button-collapse">
-            <i class="material-icons">menu</i>
+        <ul class="left">        
+          <a href="#!" class="brand-logo"><img src="http://lorempixel.com/170/30/" alt=""></a>
+          <a href="" data-activates="nav-mobile" class="button-collapse">
+              <i class="mdi-navigation-menu"></i>
           </a>
-        </ul>        
+        </ul>
         <ul class="right hide-on-med-and-down">
-            <li class="active"><a href="#"><i class="material-icons prefix">home</i></a></li>
+          <li class="active"><a href="#"><i class="material-icons prefix">home</i></a></li>
           <li><a href="#modal1" class="modal-trigger"><i class="material-icons prefix">store</i></a></li> <!--- Debe ser un modal materialize -->
           <li><a href="#"><i class="material-icons prefix">clear</i></a></li>
-          </ul>
+        </ul>
 
           <ul class="side-nav fixed" id="nav-mobile">  
-            <li id="primero">
+            <li class="nohover">
               <div class="row" style="margin-bottom: 0;">
               <div class="col s4 m4 l4">
                 <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
@@ -39,16 +39,45 @@
               </div>
             </div>
             </li>
-            <li class="active">
-              <a href="#" class="">
-               <i class="fa fa-home fa-2x fa-fw"></i>
-                 Home
-              </a>
-            </li>
-            <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 1</a></li>
-            <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 2</a></li>
-            <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 3</a></li>
+            <li class="nohover"> 
+      <ul class="collapsible collapsible-accordion">
+        <li class="bold active">
+          <a class="collapsible-header"><i class="material-icons">store</i>Ventas</a>
+          <div class="collapsible-body">
+            <ul>
+              <li class="active"><a href="">Todas las ventas</a>
+              </li>
+              <li><a href="">Crear venta</a></li>  
+              <li><a href="">Reportes</a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="bold">
+          <a class="collapsible-header"><i class="material-icons">format_list_bulleted</i>Carta</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="">Menu</a>
+              </li>
+                 <!--   <li><a href="">Agregar al menu</a> -->
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="bold">
+          <a class="collapsible-header"><i class="material-icons">person</i>Usuarios</a>
+          <div class="collapsible-body">
+            <ul>
+              <li><a href="">Todos los usuarios</a></li>
+              <!-- <li><a href="">Crear usuario</a></li> -->
+              <li><a href="">Editar Perfil</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </li>
           </ul>
+          
       </div>
     </nav>
   </div>
@@ -107,7 +136,7 @@
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Siempre primero jquery -->
-<script src="js/materialize.min.js"></script>	
+<script src="js/materialize.min.js"></script> 
 
 <script>
     $(document).ready(function(){
