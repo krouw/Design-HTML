@@ -1,4 +1,4 @@
-#content {
+	#content {
       padding-left: 100px;
 }
 
@@ -8,11 +8,17 @@
 	}
 }
 
+@media only screen and (min-width : 992px) {
+	.side-nav{
+	margin-top: 64px;
+	}
+}
+
 .profile-img{
 	margin-top: 10px;
 }
 
-.primero:hover{
+#primero:hover{
 	background-color: transparent;
 }
 
@@ -20,12 +26,8 @@
 	margin-left: 12px;
 }
 
-.side-nav{
-	margin-top: 64px;
-}
-
 .dropdown-content li{
-	line-height: 44px;
+	line-height: 20px;
 }
 
 .profile-btn{

@@ -10,55 +10,51 @@
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="navbar-fixed">
-      <nav class="">
-      <div class="nav-wrapper">
-        <ul class="left">        
-          <a href="#!" class="brand-logo"><img src="http://lorempixel.com/170/30/" alt=""></a>
-          <a href="" data-activates="mobile" class="button-collapse">
-              <i class="mdi-navigation-menu"></i>
-          </a>
-        </ul>
+  <!-- Header -->
+  <div class="navbar-fixed">
+    <nav class="red lighten-2" role="navigation">
+      <div class="nav-wrapper fixed">
+        <a href="#!" class="brand-logo"><img src="http://lorempixel.com/170/30/" alt=""></a>        
         <ul class="right hide-on-med-and-down">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">MENU 1</a></li>
-          <li><a href="#">MENU 2</a></li>
-          <li><a href="#">MENU 3</a></li>
-        </ul> 
+            <li class="active"><a href="#"><i class="material-icons prefix">home</i></a></li>
+          <li><a href="#modal1" class="modal-trigger"><i class="material-icons prefix">store</i></a></li> <!--- Debe ser un modal materialize -->
+          <li><a href="#"><i class="material-icons prefix">clear</i></a></li>
+          </ul>
+
+          <ul class="side-nav fixed" id="nav-mobile">  
+            <li id="primero">
+              <div class="row" style="margin-bottom: 0;">
+              <div class="col s4 m4 l4">
+                <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
+              </div>
+              <div class="col s8 m8 l8">
+                  <a href="" class="btn-flat dropdown-button blue-text profile-btn" data-activates="dropdown1" data-beloworigin="true">Felipe Rubio <i class="material-icons right">arrow_drop_down</i></a>
+                  <!-- Max 16 caracteres -->
+                  <p class="black-text thin">Administrador</p>
+              </div>
+            </div>
+            </li>
+            <li class="active">
+              <a href="#" class="">
+               <i class="fa fa-home fa-2x fa-fw"></i>
+                 Home
+              </a>
+            </li>
+            <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 1</a></li>
+            <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 2</a></li>
+            <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 3</a></li>
+          </ul>
+          <a href="#" data-activates="nav-mobile" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
       </div>
     </nav>
-    </div>
-  </header>
+  </div>
+<!-- END HEADER -->
 
   <div id="main">
     <div class="wrapper">
-      <aside>
-        <ul class="side-nav fixed" id="mobile">
-            
-          <li class="primero">
-            <div class="row" style="margin-bottom: 0;">
-            <div class="col s4 m4 l4">
-              <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
-            </div>
-            <div class="col s8 m8 l8">
-                <a href="" class="btn-flat dropdown-button blue-text profile-btn" data-activates="dropdown1" data-beloworigin="true">Felipe Rubio <i class="material-icons right">arrow_drop_down</i></a>
-                <!-- Max 16 caracteres -->
-                <p class="black-text thin">Administrador</p>
-            </div>
-          </div>
-          </li>
-          <li class="active">
-            <a href="#" class="">
-             <i class="fa fa-home fa-2x fa-fw"></i>
-               Home
-            </a>
-          </li>
-          <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 1</a></li>
-          <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 2</a></li>
-          <li><a href="#"><i class="fa fa-home fa-2x fa-fw"></i>MENU 3</a></li>
-        </ul>
-      </aside>
+     
       <section id="content">
         <div class="container">
         <form action="">
@@ -105,20 +101,24 @@
       </section>
     </div>
   </div>
- 
- <ul id='dropdown1' class='dropdown-content'>
-  <li><a href="#!">one</a></li>
-  <li><a href="#!">two</a></li>
-  <li class="divider"></li>
-  <li><a href="#!">three</a></li>
-</ul>
+
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Siempre primero jquery -->
 <script src="js/materialize.min.js"></script>	
+
+<script>
+    $(document).ready(function(){
+      if (screen.width<400){
+          $('#frase1').replaceWith(function() {
+                return '<h2 id="frase1" class="header center red-text text-lighten-1 bold">' + $(this).text() + '</h2>';
+          });
+        }
+    });
+  </script>
+
 <script>
   $(".button-collapse").sideNav();
-
 </script>
 </body>
 </html>
