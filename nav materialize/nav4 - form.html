@@ -125,8 +125,67 @@
 </div>
 
 <div id="caja-options" class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
-    <a href="#" id="button-options" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Realizar venta"><i id="floating-options" class="material-icons">add</i></a>
+    <a href="#modal1" id="button-options" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Realizar venta"><i id="floating-options" class="material-icons">add</i></a>
   </div>
+
+
+<!-- Modal Ventas Activas  -->
+<div id="modal1" class="modal bottom-sheet">
+    <div class="modal-content">
+      <div class="container">
+        <h4>Últimas ventas</h4>
+        <ul class="collection">
+          <li class="collection-item avatar">
+            <div class="row">
+              <div class="col s4">
+                <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
+            <span class="title">Inicio hace 57 min</span>
+            <p>Felipe<br>
+               123 - pendiente
+            </p> 
+              </div>
+              <div class="col s4 center red-text fontsize-20">PRICE</div>
+              <div class="col s4 center">
+                <a href="#!" class="btn btn-floating red lighten-1"><i class="material-icons">mode_edit</i></a>
+                <a href="#!" class="btn btn-floating red lighten-1"><i class="material-icons">done_all</i></a>
+              </div>
+            </div>
+          </li>
+          <li class="collection-item avatar">
+            <div class="row">
+              <div class="col s4">
+                <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
+            <span class="title">Inicio hace 57 min</span>
+            <p>Felipe<br>
+               123 - pendiente
+            </p> 
+              </div>
+              <div class="col s4 center red-text fontsize-20">PRICE</div>
+              <div class="col s4 center">
+                <a href="#!" class="btn btn-floating red lighten-1"><i class="material-icons">mode_edit</i></a>
+                <a href="#!" class="btn btn-floating red lighten-1"><i class="material-icons">done_all</i></a>
+              </div>
+            </div>
+          </li><li class="collection-item avatar">
+            <div class="row">
+              <div class="col s4">
+                <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
+            <span class="title">Inicio hace 57 min</span>
+            <p>Felipe<br>
+               123 - pendiente
+            </p> 
+              </div>
+              <div class="col s4 center red-text fontsize-20">PRICE</div>
+              <div class="col s4 center">
+                <a href="#!" class="btn btn-floating red lighten-1"><i class="material-icons">mode_edit</i></a>
+                <a href="#!" class="btn btn-floating red lighten-1"><i class="material-icons">done_all</i></a>
+              </div>
+            </div>
+          </li>
+        </ul> 
+    </div>
+  </div>
+<!-- ENDModal -->
 
             
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -145,6 +204,22 @@
 
 <script>
   $(".button-collapse").sideNav();
+  $(document).ready(function(){
+    $('.collapsible').collapsible({
+      accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+    });
+    $('select').material_select();
+    $('.modal-trigger').leanModal();
+  });
+</script>
+<script>
+  var $modal = document.querySelector('#modal1');
+
+  var modal = new Hammer($modal);
+  modal.on('panbuttom',function(){
+    $('#modal1')..removeAttr("style");
+  });
+
 </script>
 </body>
 </html>
