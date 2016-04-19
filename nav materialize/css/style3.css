@@ -38,3 +38,7 @@
 .brand-logo:hover, .btn-flat:hover{
 	background-color: transparent;
 }
+
+.nohover:hover{
+	background-color: transparent !important;
+}
