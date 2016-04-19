@@ -85,53 +85,44 @@
 
   <div id="main">
     <div class="wrapper">
-     
       <section id="content">
         <div class="container">
         <form action="">
-          <div class="row">
-            <h4 class="left">Ingresar usuario</h4>
+        <div class="row">
+          <h4 class="left">Ingresar comida</h4>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">cake</i>                    
+            <input id="name" type="text" class="validate">
+            <label for="name" class="center-align">Nombre</label>
           </div>
-          <div class="row margin">
-            <div class="input-field col s12">
-              <i class="mdi-social-person-outline prefix"></i>
-                    <input id="username" type="text" class="validate">
-                    <label for="username" class="center-align">Nombre de usuario</label>
-            </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">attach_money</i>                 
+            <input id="price" type="text" class="validate">
+            <label for="price" class="center-align">Precio</label>
           </div>
-          <div class="row margin">
-                <div class="input-field col s12">
-                    <i class="mdi-communication-email prefix"></i>
-                    <input id="email" type="email" class="validate">
-                    <label for="email" data-error="error" data-success="bien!" class="center-align">Email</label>
-                  </div>
-              </div>  
-          <div class="row margin">
-              <div class="input-field col s12">
-                  <i class="mdi-action-lock-outline prefix"></i>
-                  <input id="password" type="password" class="validate">
-                  <label for="password">Password</label>
-              </div>
-              </div>
-              <div class="row margin">
-              <div class="input-field col s12">
-                  <i class="mdi-action-lock-outline prefix"></i>
-                  <input id="passwordc" type="password" class="validate">
-                  <label for="passwordc">Repetir Password</label>
-              </div>
-              </div>
-                <div class="row">
-                  <div class="input-field col s12">
-                    <a href="index.html" class="btn waves-effect waves-light2 red lighten-1">Registrar</a>
-                  </div>
-                
-                </div>    
-                <br>      
-        </form>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">comment</i>                 
+            <input id="comment" type="text" class="validate">
+            <label for="comment" class="center-align">Descripción</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <a href="index.html" class="btn waves-effect waves-light2">Ingresar Comida</a>
+          </div>
+        </div>    
+        <br>      
+      </form>
         </div>
       </section>
     </div>
-  </div>
+</div>
 
 <div id="caja-options" class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
     <a href="#" id="button-options" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Realizar venta"><i id="floating-options" class="material-icons">add</i></a>
