@@ -33,7 +33,7 @@
                 <img src="http://lorempixel.com/80/80/" alt="" class="circle responsive-img valign profile-img">
               </div>
               <div class="col s8 m8 l8">
-                  <a href="" class="btn-flat dropdown-button blue-text profile-btn" data-activates="dropdown1" data-beloworigin="true">Felipe Rubio <i class="material-icons right">arrow_drop_down</i></a>
+                  <a href="" class="btn-flat dropdown-button blue-text profile-btn" data-activates="dropdown1" data-beloworigin="true">Felipe Rubio</a>
                   <!-- Max 16 caracteres -->
                   <p class="black-text thin">Administrador</p>
               </div>
@@ -41,14 +41,14 @@
             </li>
             <li class="nohover"> 
       <ul class="collapsible collapsible-accordion">
-        <li class="bold active">
-          <a class="collapsible-header"><i class="material-icons">store</i>Ventas</a>
+        <li class="bold">
+          <a class="collapsible-header active"><i class="material-icons">store</i>Ventas</a>
           <div class="collapsible-body">
             <ul>
-              <li class="active"><a href="">Todas las ventas</a>
+              <li class="active"><a href="" class="nohover">Todas las ventas</a>
               </li>
-              <li><a href="">Crear venta</a></li>  
-              <li><a href="">Reportes</a>
+              <li><a href="" class="nohover">Crear venta</a></li>  
+              <li><a href="" class="nohover">Reportes</a>
               </li>
             </ul>
           </div>
@@ -57,7 +57,7 @@
           <a class="collapsible-header"><i class="material-icons">format_list_bulleted</i>Carta</a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="">Menu</a>
+              <li><a href="" class="nohover">Menu</a>
               </li>
                  <!--   <li><a href="">Agregar al menu</a> -->
               </li>
@@ -68,9 +68,9 @@
           <a class="collapsible-header"><i class="material-icons">person</i>Usuarios</a>
           <div class="collapsible-body">
             <ul>
-              <li><a href="">Todos los usuarios</a></li>
+              <li><a href="" class="nohover">Todos los usuarios</a></li>
               <!-- <li><a href="">Crear usuario</a></li> -->
-              <li><a href="">Editar Perfil</a></li>
+              <li><a href="" class="nohover">Editar Perfil</a></li>
             </ul>
           </div>
         </li>
@@ -122,7 +122,7 @@
               </div>
                 <div class="row">
                   <div class="input-field col s12">
-                    <a href="index.html" class="btn waves-effect waves-light2">Registrar</a>
+                    <a href="index.html" class="btn waves-effect waves-light2 red lighten-1">Registrar</a>
                   </div>
                 
                 </div>    
@@ -133,17 +133,21 @@
     </div>
   </div>
 
+<div id="caja-options" class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+    <a href="#" id="button-options" class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="top" data-delay="50" data-tooltip="Realizar venta"><i id="floating-options" class="material-icons">add</i></a>
+  </div>
 
+            
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <!-- Siempre primero jquery -->
 <script src="js/materialize.min.js"></script> 
 
 <script>
     $(document).ready(function(){
-      if (screen.width<400){
-          $('#frase1').replaceWith(function() {
-                return '<h2 id="frase1" class="header center red-text text-lighten-1 bold">' + $(this).text() + '</h2>';
-          });
+      if (screen.width<992){
+        $('#floating-options').text('more_horiz');
+        $('#button-options').attr('data-tooltip',"Menu");
+        $('#caja-options').append('<ul><li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Home"><i class="material-icons">home</i></a></li><li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Últimas ventas"><i class="material-icons">store</i></a></li><li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Nueva venta"><i class="material-icons">add</i></a></li><li><a class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="Salir"><i class="material-icons">clear</i></a></li></ul>');
         }
     });
   </script>
